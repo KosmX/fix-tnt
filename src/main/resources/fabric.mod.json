@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-    "mmfix.json"
+    "mmfix.mixin.json"
   ],
 
   "depends": {
