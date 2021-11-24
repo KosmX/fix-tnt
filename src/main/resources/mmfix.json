@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "io.github.kosmx.mmfix.mixin.ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
