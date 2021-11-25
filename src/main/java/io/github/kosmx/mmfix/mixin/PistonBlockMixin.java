@@ -12,6 +12,7 @@ import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 import org.jetbrains.annotations.Nullable;
@@ -60,10 +61,9 @@ public class PistonBlockMixin extends BlockWithEntity {
         }
     }
 
-
     @Nullable
     @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+    public BlockEntity createBlockEntity(BlockView world) {
         return null;
     }
 }

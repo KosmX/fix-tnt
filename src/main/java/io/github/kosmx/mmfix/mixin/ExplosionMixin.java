@@ -24,6 +24,6 @@ public class ExplosionMixin {
     @Redirect(method = "affectWorld", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/Block;onDestroyedByExplosion(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/explosion/Explosion;)V"))
     private void setBlockStateCall(Block instance, World world, BlockPos pos, Explosion explosion){
         instance.onDestroyedByExplosion(world, pos, explosion);
-        world.setBlockState(pos, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL);
+        world.setBlockState(pos, Blocks.AIR.getDefaultState(), 3);
     }
 }

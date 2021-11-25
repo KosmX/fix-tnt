@@ -1,14 +1,12 @@
 package io.github.kosmx.mmfix.mixin;
 
 import net.minecraft.block.TntBlock;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.TntEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -26,6 +24,5 @@ public class TNTMixin {
         world.spawnEntity(tntEntity);
         tntEntity.setFuse(10);
         world.playSound(null, tntEntity.getX(), tntEntity.getY(), tntEntity.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
-        world.emitGameEvent((Entity)igniter, GameEvent.PRIME_FUSE, pos);
     }
 }
