@@ -1,4 +1,12 @@
-# Fabric Example Mod
+# TNT fixing
+
+Just fix 2 annoying bug in Minecraft:
+If a flaming arrow hit a tnt, what is being pushed by piston, the TNT just won't explode.  
+
+And tnt, being pushed by piston won't explode if it was destroyed by an explosion.
+
+
+__Both 🪲 are fixed__  
 
 ## Setup
 
